@@ -59,6 +59,31 @@ export const routes = [
         component: () => import('@/features/visitors/views/VisitorsPage.vue'),
         meta: { requiresAuth: true },
       },
+      {
+        path: 'whatsapp-settings',
+        component: () => import('@/features/visitors/views/WhatsAppSettingsPage.vue'),
+        meta: { requiresAuth: true },
+      },
+      {
+        path: 'templates',
+        component: () => import('@/features/message-templates/views/TemplatesPage.vue'),
+        meta: { requiresAuth: true },
+      },
+      {
+        path: 'manajemen-kegiatan/periode',
+        component: () => import('@/features/manajemen-kegiatan/views/PeriodePage.vue'),
+        meta: { requiresAuth: true },
+      },
+      {
+        path: 'manajemen-kegiatan/survei',
+        component: () => import('@/features/manajemen-kegiatan/views/SurveiPage.vue'),
+        meta: { requiresAuth: true },
+      },
+      {
+        path: 'manajemen-kegiatan/tipe-periode',
+        component: () => import('@/features/manajemen-kegiatan/views/TipePeriodePage.vue'),
+        meta: { requiresAuth: true },
+      },
     ],
   },
   {
